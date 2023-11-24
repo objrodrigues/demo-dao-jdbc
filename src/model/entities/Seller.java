@@ -10,23 +10,23 @@ public class Seller implements Serializable{
 	private Integer id;
 	private String name;
 	private String email;
-	private Date birthate;
+	private Date birthDate;
 	private Double baseSalary;
 	
-	private Department departament;
+	private Department department;
 	
 	public Seller () {
 		
 	}
 
-	public Seller(Integer id, String name, String email, Date birthate, Double baseSalary, Department departament) {
+	public Seller(Integer id, String name, String email, Date birthate, Double baseSalary, Department department) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.email = email;
-		this.birthate = birthate;
+		this.birthDate = birthate;
 		this.baseSalary = baseSalary;
-		this.departament = departament;
+		this.department = department;
 	}
 
 	public Integer getId() {
@@ -53,12 +53,12 @@ public class Seller implements Serializable{
 		this.email = email;
 	}
 
-	public Date getBirthate() {
-		return birthate;
+	public Date getBirthDate() {
+		return birthDate;
 	}
 
-	public void setBirthate(Date birthate) {
-		this.birthate = birthate;
+	public void setBirthDate(Date birthate) {
+		this.birthDate = birthate;
 	}
 
 	public Double getBaseSalary() {
@@ -69,12 +69,12 @@ public class Seller implements Serializable{
 		this.baseSalary = baseSalary;
 	}
 
-	public Department getDepartament() {
-		return departament;
+	public Department getDepartment() {
+		return department;
 	}
 
-	public void setDepartament(Department departament) {
-		this.departament = departament;
+	public void setDepartment(Department departament) {
+		this.department = departament;
 	}
 
 
@@ -102,8 +102,8 @@ public class Seller implements Serializable{
 
 	@Override
 	public String toString() {
-		return "Seller [id=" + id + ", name=" + name + ", email=" + email + ", birthate=" + birthate + ", baseSalary="
-				+ baseSalary + ", departament=" + departament + "]";
+		return "Seller [id=" + id + ", name=" + name + ", email=" + email + ", birthate=" + birthDate + ", baseSalary="
+				+ baseSalary + ", departament=" + department + "]";
 	}
 	
 	
